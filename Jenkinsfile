@@ -1,6 +1,6 @@
 pipeline {
-    agent { label 'ubuntu_local' }
-
+    #agent { label 'ubuntu_local' }
+    agent any
     environment {
         BUILD_SCRIPT = './build.sh'
         RUN_SCRIPT = './run.sh'
